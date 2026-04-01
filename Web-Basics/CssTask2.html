@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Scheduler</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: rgb(20, 158, 244);
+            color: white;
+            padding: 20px;
+        }
+
+        input, select {
+            height: 30px;
+            width: 200px;
+            margin: 5px;
+        }
+
+        button {
+            height: 35px;
+            padding: 5px 15px;
+        }
+
+        .button {
+            background-color: rgb(26, 115, 6);
+            color: white;
+            border: none;
+        }
+
+        fieldset {
+            width: 600px;
+            border: 1px solid darkgray;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .block {
+            display: flex;                 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <h1>Task Scheduler</h1>
+
+    <input type="text" placeholder="Enter task...">
+
+    <select>
+        <option>Top priority</option>
+        <option>Mid</option>
+        <option>Low</option>
+    </select>
+
+    <input type="date">
+
+    <button type="submit">Add Task</button>
+
+    <br><br>
+
+    <fieldset>
+
+        <fieldset>
+            <div class="block">
+                <span>DSA Practice</span>
+                <span>Priority: Top</span>
+                <span>Deadline: 2023-08-24</span>
+                <span><button type="button" class="button">Mark Done</button></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="block">
+                <span>DSA Practice</span>
+                <span>Priority: Mid</span>
+                <span>Deadline: 2023-08-24</span>
+                <span><button type="button" class="button">Mark Done</button></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="block">
+                <span>DSA Practice</span>
+                <span>Priority: Low</span>
+                <span>Deadline: 2023-08-24</span>
+                <span><button type="button" class="button">Mark Done</button></span>
+            </div>
+        </fieldset>
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

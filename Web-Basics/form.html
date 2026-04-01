@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form is used to get information from the user
+     action-is an attribute this renders to another page when we give submit
+     label tag = has for attribute that links it to an input element -->
+     <!-- inside input tag we can use submit but we can't able to perform onclick function  -->
+    <form action="">
+      <label for="name">NAME :</label>
+      <input type="text" id="name" >
+      <br> 
+      <Label for="age">AGE :</Label>
+      <input type="number" id="age">
+      <br>
+      <label for="add">ADDRESS :</label>
+        <textarea  id="add"></textarea>
+        <br>
+      <label for="password">PASSWORD :</label> 
+       <input type="password" id="password">
+       <br>
+       <label for="cpassword">CONFIRM PASSWORD :</label>
+       <input type="password" id="cpassword">
+       <br>
+       <label for="email">EMAIL :</label>
+       <input type="email" id="email">
+       <br>
+       <label for="phno">PHONE NUMBER :</label>
+       <input type="tel" id="phno">
+       <br>
+       <label for="date">DOB :</label>
+       <input type="date" id="date">
+       <br> 
+       <label for="dateandtime">date&time :</label>
+       <input type="datetime-local" id="dateandtime">
+       <br>
+       <label for="month">MONTH :</label>
+       <input type="month" id="month">
+       <br>
+       <label for="week">WEEK :</label>
+       <input type="week" id="week">
+       <br>
+       <label for="years">YEARS OF EXPERIENCE :</label>
+       <input type="range" id="years" min="0" max="100">
+       <br>
+       <label for="skill">SKILL :</label>
+       <select  id="skill">
+        <option >HTML</option>
+        <option >CSS</option>
+        <option >JAVASCRIPT</option>
+       </select>
+       <br>
+       <label for="file">UPLOAD FILE :</label>
+       <input type="file" id="file">
+       <br>
+       <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

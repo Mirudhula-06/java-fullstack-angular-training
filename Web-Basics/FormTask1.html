@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- placeholder= is a hint that appears in the input field before the user types , it is a transparent text for input field -->
+     <!-- fieldset is a container for grouping related form elements -->
+      <!-- legend is a caption for the fieldset -->
+       <!-- cols is a property that defines the width of a textarea in terms of average character width
+        rows is a property that defines the height of a textarea in terms of number of rows -->
+        <!-- list is a -->
+         <!-- name is an attribute -->
+         <!-- form validation- it is a process of ensuring that the data enterred in a form is correct and completed
+          1.required-ensures user must give the input for that particular field before submitting the form
+          2.readonly-user can see the value but cannot change it
+          3.disabled-user cannot interact with the field and it will not be submitted with the form it is use to disable the field
+          4.checked-it is basically use for default value for checkbox and radio button
+          5.min/max-it is used to set limitation-->
+    <form action="">
+        <fieldset style="width: 100%;">
+            <legend>Personal Information</legend>
+            <label for="saturation">Saturation</label>
+        <br>
+        <select name="saturation" id="saturation">
+            <option value="">--None--</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="fname" >First Name:</label>
+    <input type="text" id="fname" required>
+    <br>
+    <br>
+    <label for="lname" >Last Name:</label>
+    <input type="text" id="lname" required>
+    <br>
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <!-- name of both male and female radio buttons is "gender" because gender will accept only one value -->
+     <!-- if we didn't mention it then both the radio button will be enabled at the same time -->
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">
+    <br><br>
+    <label for="Address">Address:</label>
+    <br>
+    <textarea name="address" id="address" cols="30px" rows="20px" placeholder="text some content.." readonly></textarea>
+     <br>
+     <br>
+     <input type="text" list="fruit" placeholder="select fruit">
+     <datalist id="fruit">
+        <option value="Apple">apple</option>
+        <option value="Banana">banana</option>
+        <option value="Mango">mango</option>
+         <option value="Grapes">grapes</option>
+          <option value="Pineapple">pineapple</option>
+           <option value="Strawberry">strawberry</option>
+            <option value="Watermelon">watermelon</option>
+             <option value="Papaya">papaya</option>
+              <option value="Kiwi">kiwi</option>
+               <option value="Peach">peach</option>
+                <option value="Cherry">cherry</option>
+                 <option value="Blueberry">blueberry</option>
+                  <option value="Raspberry">raspberry</option>
+                   <option value="Blackberry">blackberry</option>
+                    <option value="Lemon">lemon</option>
+                     <
+        <option value="Orange">
+     </datalist>
+     <br>
+     <br>
+     <label for="skills">Skills:</label>
+     <input type="checkbox" id="skills">Java
+        <input type="checkbox" id="skills" checked>Python
+        <input type="checkbox" id="skills" disabled="true">C++
+        <input type="checkbox" id="skills">JavaScript
+     <br>
+     <br>
+     <button type="submit">Submit</button>
+        </fieldset>
+</form>
+</body>
+</html>
